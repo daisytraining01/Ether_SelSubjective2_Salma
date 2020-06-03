@@ -31,6 +31,10 @@ public class RegisterPageLocators {
 
 	@FindBy(how = How.XPATH, using = "//a[@class='btn btn-info btn-lg btn-block login-button']")
 	public WebElement cancelSignUp;
+	
+	@FindBy(how = How.XPATH, using = "//button[contains(@class,'btn btn-primary btn-block')]")
+	public WebElement change_setting;
+
 
 	public RegisterPageLocators() {
 

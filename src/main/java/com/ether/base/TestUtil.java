@@ -82,12 +82,12 @@ public class TestUtil {
 		FileInputStream finputstream = new FileInputStream(System.getProperty("user.dir") + "/config.properties");
 		Properties prop = new Properties();
 		prop.load(finputstream);
-		//JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+		JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 		
-	JDBC_DRIVER="com.mysql.jdbc.Driver";
+	//JDBC_DRIVER="com.mysql.jdbc.Driver";
 		Class.forName(JDBC_DRIVER);
-		//String DB_URL = "jdbc:mysql://elastic.rapidtestpro.com:2777/Ether";
-		String DB_URL ="jdbc:mysql://localhost:3306/profile?useSSL=false";
+		String DB_URL = "jdbc:mysql://elastic.rapidtestpro.com:2777/Ether";
+		//String DB_URL ="jdbc:mysql://localhost:3306/profile?useSSL=false";
 		dBconnection = DriverManager.getConnection(DB_URL, prop.getProperty("DB_UserName"),
 				prop.getProperty("DB_Password"));
 

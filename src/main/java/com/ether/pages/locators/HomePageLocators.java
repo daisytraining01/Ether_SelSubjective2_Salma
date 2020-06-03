@@ -60,24 +60,7 @@ public class HomePageLocators {
 	
 	
 	
-	@FindBy(how = How.XPATH, using = "//input[@id='firstName']")
-	public WebElement first_name;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='lastName']")
-	public WebElement last_name;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='phone']")
-	public WebElement phone_number;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='email']")
-	public WebElement email_id;
-
-	@FindBy(how = How.XPATH, using = "//input[@id='username']")
-	public WebElement user_name;
-
-	@FindBy(how = How.XPATH, using = "//button[contains(@class,'btn btn-primary btn-block')]")
-	public WebElement change_setting;
-
+	
 	
 	
 	

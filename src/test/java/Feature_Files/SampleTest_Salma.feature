@@ -3,7 +3,7 @@ Feature: List of scenarios
 
 
 
-@Profile
+@Test
    Scenario: Validation of profile
      Given Launch the url
     And login with userName1 and password1
@@ -15,6 +15,10 @@ Feature: List of scenarios
     And Validate phone number
     And Validate email
     And validate userName
+    
+    
+  
+    
     
    
 
