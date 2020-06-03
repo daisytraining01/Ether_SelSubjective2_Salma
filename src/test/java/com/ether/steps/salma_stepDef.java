@@ -37,7 +37,7 @@ public class salma_stepDef {
 		String userName = null;
 		String password = null;
 		util.setUpDBConnection();
-		String query = "Select * from user_details where username='mayana'";
+		String query = "Select * from user_details";
 		ResultSet result = util.getDataFromDB(query);
 
 		while (result.next()) {
@@ -191,50 +191,6 @@ public class salma_stepDef {
 				}
 	  //  throw new PendingException();
 	}
-	
-	
-	@Given("^phone number is updated$")
-	public void phone_number_is_updated() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-		 salma_stepDef sd=new  salma_stepDef();
-		 sd.loginToUrl();
-		 sd.loginWithusername();
-		 sd.you_are_in_home_page();
-		 sd.click_on_profile();
-		String phone2 = null;
-		
-		String phone3 =locatorss.phone.getAttribute("value");
-		String phone4 ="4444444444";
-	    String phone5=phone3.replace(phone3,phone4);
-		
-		util.setUpDBConnection();
-		
-		
-		
-		String query = "update profile_validation set phone=phone5.getText() where firstName='salma'";
-		 util.updateDBData(query);
-		 
-		
-		
-         Thread.sleep(2000);
-		
-		locatorss.change_setting.click();
-		Thread.sleep(2000);
-		
-	   // throw new PendingException();
-	}
-
-	@Given("^Click on change setting$")
-	public void click_on_change_setting() throws Throwable {
-	   System.out.println("phone number is updated successfully in database");
-		
-		
-	   // throw new PendingException();
-	}
-
-
-	
-	
 	
 	
 	
